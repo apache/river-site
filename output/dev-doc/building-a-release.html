@@ -1,0 +1,270 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+    <!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE- 2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    -->
+
+    <title>Apache River - Building a release</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta property="og:image" content="//www.apache.org/images/asf_logo.gif"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="/css/river.css" media="screen">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" media="screen">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <style type="text/css">
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}    </style>
+</head>
+
+<body style="padding-top: 50px;">
+<div class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#river-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/index.html"><img src="/images/river_logo.png">Apache River&trade;</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="river-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">Downloads <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/user-doc/releases.html">Releases</a></li>
+                    <li><a href="/user-doc/maven-artifacts.html">Maven artifacts</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">Documentation <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/user-doc/getting-started.html">Getting started</a></li>
+                    <li><a href="/user-doc/networking.html">Networking</a></li>
+                    <li><a href="/user-doc/glossary.html">Glossary</a></li>
+                    <li><a href="/user-doc/cookbook.html">Cookbook</a></li>
+                    <li><a href="/user-doc/supported-platforms.html">Supported platforms</a></li>
+                    <li><a href="/user-doc/resources.html">Resources</a></li>
+                    <li><a href="/user-doc/readings.html">Readings</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/user-doc/specification.html">Specification</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/release-doc/current/api/index.html">Javadoc</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">Community<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/user-doc/get-involved.html">Get involved</a></li>
+                    <li><a href="/user-doc/mailing-lists.html">Mailing lists</a></li>
+                    <li><a href="/user-doc/found-a-bug.html">Found a bug</a></li>
+                    <li><a href="/user-doc/website.html">Web site</a></li>
+                    <li><a href="/user-doc/people.html">People</a></li>
+                    <li><a href="/user-doc/success-stories.html">Success stories</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">Development <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/dev-doc/source-code.html">Source code</a></li>
+                    <li><a href="/dev-doc/development-process.html">Development process</a></li>
+                    <li><a href="/dev-doc/building-river.html">Building River</a></li>
+                    <li><a href="/dev-doc/ci.html">Continuous Integration</a></li>
+                    <li><a href="/dev-doc/building-a-release.html">Building a release</a></li>
+                    <li><a href="https://issues.apache.org/jira/browse/RIVER">Issue tracker</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">The Foundation <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org">Apache</a></li>
+                    <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                    <li><a href="http://www.apache.org/foundation/sponsorship.html">Donate</a></li>
+                    <li><a href="http://www.apache.org/foundation/how-it-works.html">How it
+                        works</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <form class="navbar-form navbar-right" role="search"
+              name="search" id="search" action="http://www.google.com/search" method="get">
+            <input value="river.apache.org" name="sitesearch" type="hidden"/>
+            <div class="form-group input-group" style="padding: 6px">
+                <input type="text" name="q" id="query" placeholder="Google custom search" class="form-control input-sm">
+                <span class="input-group-btn">
+    <button type="submit" class="btn btn-default btn-sx btn-sm">
+        <i class="glyphicon glyphicon-search" style="width: 15; height: 17"></i>
+    </button>
+    </span>
+            </div>
+        </form>
+
+    </div>
+</div>
+</div>
+
+
+<div class="container">
+    <div class="space-lg"></div>
+    <div class="clear"></div>
+    <div id="content">
+    <h2 id="building-a-release-major-release">Building a release major release<a class="headerlink" href="#building-a-release-major-release" title="Permalink">&para;</a></h2>
+<p><strong>n</strong>.<strong>m</strong> <strong>n</strong> = major release number, <strong>m</strong> = minor release number</p>
+<div class="space-mn"></div>
+<h3 id="keys-file">KEYS file<a class="headerlink" href="#keys-file" title="Permalink">&para;</a></h3>
+<p>Add your key to the KEYS file in the repo</p>
+<div class="space-mn"></div>
+<h3 id="checkout-the-source">Checkout The Source<a class="headerlink" href="#checkout-the-source" title="Permalink">&para;</a></h3>
+<pre><code>svn checkout https://svn.apache.org/repos/asf/river/jtsk/trunk river
+</code></pre>
+<div class="space-mn"></div>
+<h3 id="pre-release-checks">Pre release checks<a class="headerlink" href="#pre-release-checks" title="Permalink">&para;</a></h3>
+<ul>
+<li>River-trunk should run successful.</li>
+<li>River-verify should run successful. (not yet?)</li>
+</ul>
+<div class="space-mn"></div>
+<h3 id="gather-release-notes-from-jira">Gather Release Notes From Jira<a class="headerlink" href="#gather-release-notes-from-jira" title="Permalink">&para;</a></h3>
+<p>First <a href="https://issues.apache.org/jira/secure/project/ViewProject.jspa?pid=12310600">manage the versions</a> of River using Jira.  Make sure there is an appropriate release that Jira issues are have been assigned to.  You can then view the <a href="https://issues.apache.org/jira/browse/RIVER#selectedTab=com.atlassian.jira.plugin.system.project%3Aroadmap-panel">Roadmap</a> screen in Jira to create the release and make sure that the correct Jira issues are associated to it.</p>
+<p>Move the Jira issues around appropriately, especially if you're releasing before all the issues have been resolves.  In this case, you need to postpone the remaining issues until a later release.</p>
+<p>You can then use Jira to generate the release notes.  This is done Road Map --&gt; Release --&gt; Summary --&gt; Release Notes (next to "Filters").</p>
+<p>The release notes need to be pasted into;</p>
+<pre><code>river/trunk/src-doc/static/release-notes/index.html
+</code></pre>
+<div class="space-mn"></div>
+<h3 id="update-version-numbers">Update Version Numbers<a class="headerlink" href="#update-version-numbers" title="Permalink">&para;</a></h3>
+<p>There are version numbers in the following places that need to be updated with the new release number/name.</p>
+<ul>
+<li>com.sun.jini.constants.VersionConstants.java (SERVER_VERSION)</li>
+<li>river/trunk/src-doc/static/release-notes/index.html (version number)</li>
+</ul>
+<p>In the above HTML page, there is also a section on "changes by component" which should also be updated.  This should be easy to do by referring to the Jira-generated release notes.</p>
+<div class="space-mn"></div>
+<h3 id="branch-the-repository">Branch the repository<a class="headerlink" href="#branch-the-repository" title="Permalink">&para;</a></h3>
+<pre><code>svn cp https://svn.apache.org/repos/asf/river/jtsk/trunk https://svn.apache.org/repos/asf/river/jtsk/branches/$VERSION
+</code></pre>
+<div class="space-mn"></div>
+<h3 id="tag-the-repository">Tag the repository<a class="headerlink" href="#tag-the-repository" title="Permalink">&para;</a></h3>
+<pre><code>svn cp https://svn.apache.org/repos/asf/river/jtsk/trunk https://svn.apache.org/repos/asf/river/jtsk/tags/$VERSION
+</code></pre>
+<div class="space-mn"></div>
+<h3 id="build-the-release-products">Build the release products<a class="headerlink" href="#build-the-release-products" title="Permalink">&para;</a></h3>
+<pre><code>ant -Dversion=$VERSION clean release
+</code></pre>
+<div class="space-mn"></div>
+<h3 id="rat-reports">Rat Reports<a class="headerlink" href="#rat-reports" title="Permalink">&para;</a></h3>
+<pre><code>./rat_reports.sh
+</code></pre>
+<div class="space-mn"></div>
+<h3 id="sign-the-release">Sign the release<a class="headerlink" href="#sign-the-release" title="Permalink">&para;</a></h3>
+<ul>
+<li>
+<p><a href="http://www.apache.org/dev/release-signing.htm">General Apache Signing Details</a></p>
+</li>
+<li>
+<p><a href="http://www.apache.org/dev/release-signing.html#sign-release">Release Signing Instructions</a> *See code below, link has a typo in it</p>
+</li>
+<li>
+<p><a href="http://www.apache.org/dev/release-signing.html#sha-checksum">Checksum Instructions</a></p>
+<p>cd dist
+for f in $( ls ); do
+gpg --armor --output $f.asc --detach-sign $f
+gpg --print-md SHA512 $f &gt; $f.sha
+done;</p>
+</li>
+</ul>
+<div class="space-mn"></div>
+<h3 id="test-the-release">Test the release<a class="headerlink" href="#test-the-release" title="Permalink">&para;</a></h3>
+<pre><code>cp dist/apache-river-$VERSION.tar.gz $SOMEWHERE_ELSE
+cd $SOMEWHERE_ELSE
+tar xvf apache-river-$VERSION.tar.gz
+cd apache-river-$VERSION
+ant build
+</code></pre>
+<div class="space-mn"></div>
+<h3 id="upload-the-release">Upload the release<a class="headerlink" href="#upload-the-release" title="Permalink">&para;</a></h3>
+<pre><code>scp RAT* username@people.apache.org:~/public_html/river/
+cd dist
+scp * username@people.apache.org:~/public_html/river/
+</code></pre>
+<div class="space-mn"></div>
+<h3 id="allow-the-community-to-evaluate-the-release-products">Allow the community to evaluate the release products<a class="headerlink" href="#allow-the-community-to-evaluate-the-release-products" title="Permalink">&para;</a></h3>
+<pre><code>* announce availability of candidate on river-dev.
+* start [VOTE] thread. 
+</code></pre>
+<div class="space-mn"></div>
+<h3 id="publish-release-on-website">Publish release on website<a class="headerlink" href="#publish-release-on-website" title="Permalink">&para;</a></h3>
+<ul>
+<li>checkout the site</li>
+<li>Extract the javadocs from the release archive into ...</li>
+<li>commit</li>
+<li>go to the CMS webclient, and publish the site.</li>
+</ul>
+
+    </div>
+    <hr>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 col-sm-1 col-md-1 col-lg-1">
+                <a href="http://apache.org" target="_blank"><img src="/images/apache-logo.png" width="40%"/></a>
+            </div>
+
+            <div class="col-xs-9 col-sm-11 col-md-11 col-lg-11">
+                <p>Copyright &#169; 2012-2021 <a href="http://www.apache.org/">The Apache Software Foundation</a>,
+                    Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version
+                        2.0</a>.
+                    <br/>
+                    Apache River, the Apache River logo, Apache and the Apache feather logo are trademarks of The
+                    Apache Software Foundation.
+                    <br/>
+                    All other marks mentioned may be trademarks or registered trademarks
+                    of their respective owners.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer></div>
+
+<!-- tooltip delay is too long, but could not find where it is set in the theme or bootstrap -->
+<script>
+$(document).ready(function(){
+    $('a').tooltip({delay: {show: 700, hide: 200}});
+});
+</script>
+</body>
+</html>

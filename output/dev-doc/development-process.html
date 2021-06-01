@@ -1,0 +1,450 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+    <!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE- 2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    -->
+
+    <title>Apache River - Development Process</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta property="og:image" content="//www.apache.org/images/asf_logo.gif"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="/css/river.css" media="screen">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" media="screen">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <style type="text/css">
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}    </style>
+</head>
+
+<body style="padding-top: 50px;">
+<div class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#river-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/index.html"><img src="/images/river_logo.png">Apache River&trade;</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="river-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">Downloads <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/user-doc/releases.html">Releases</a></li>
+                    <li><a href="/user-doc/maven-artifacts.html">Maven artifacts</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">Documentation <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/user-doc/getting-started.html">Getting started</a></li>
+                    <li><a href="/user-doc/networking.html">Networking</a></li>
+                    <li><a href="/user-doc/glossary.html">Glossary</a></li>
+                    <li><a href="/user-doc/cookbook.html">Cookbook</a></li>
+                    <li><a href="/user-doc/supported-platforms.html">Supported platforms</a></li>
+                    <li><a href="/user-doc/resources.html">Resources</a></li>
+                    <li><a href="/user-doc/readings.html">Readings</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/user-doc/specification.html">Specification</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/release-doc/current/api/index.html">Javadoc</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">Community<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/user-doc/get-involved.html">Get involved</a></li>
+                    <li><a href="/user-doc/mailing-lists.html">Mailing lists</a></li>
+                    <li><a href="/user-doc/found-a-bug.html">Found a bug</a></li>
+                    <li><a href="/user-doc/website.html">Web site</a></li>
+                    <li><a href="/user-doc/people.html">People</a></li>
+                    <li><a href="/user-doc/success-stories.html">Success stories</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">Development <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/dev-doc/source-code.html">Source code</a></li>
+                    <li><a href="/dev-doc/development-process.html">Development process</a></li>
+                    <li><a href="/dev-doc/building-river.html">Building River</a></li>
+                    <li><a href="/dev-doc/ci.html">Continuous Integration</a></li>
+                    <li><a href="/dev-doc/building-a-release.html">Building a release</a></li>
+                    <li><a href="https://issues.apache.org/jira/browse/RIVER">Issue tracker</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">The Foundation <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org">Apache</a></li>
+                    <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                    <li><a href="http://www.apache.org/foundation/sponsorship.html">Donate</a></li>
+                    <li><a href="http://www.apache.org/foundation/how-it-works.html">How it
+                        works</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <form class="navbar-form navbar-right" role="search"
+              name="search" id="search" action="http://www.google.com/search" method="get">
+            <input value="river.apache.org" name="sitesearch" type="hidden"/>
+            <div class="form-group input-group" style="padding: 6px">
+                <input type="text" name="q" id="query" placeholder="Google custom search" class="form-control input-sm">
+                <span class="input-group-btn">
+    <button type="submit" class="btn btn-default btn-sx btn-sm">
+        <i class="glyphicon glyphicon-search" style="width: 15; height: 17"></i>
+    </button>
+    </span>
+            </div>
+        </form>
+
+    </div>
+</div>
+</div>
+
+
+<div class="container">
+    <div class="space-lg"></div>
+    <div class="clear"></div>
+    <div id="content">
+    <div id="toc"><ul><li><a class="toc-href" href="#river-development-process" title="River Development Process">River Development Process</a><ul><li><a class="toc-href" href="#river-build-server" title="River build server">River build server</a></li><li><a class="toc-href" href="#tracking-issues-and-changes" title="Tracking issues and changes">Tracking issues and changes</a></li><li><a class="toc-href" href="#handling-security-related-issues" title="Handling Security -related Issues">Handling Security -related Issues</a></li><li><a class="toc-href" href="#code-reviews" title="Code Reviews">Code Reviews</a></li><li><a class="toc-href" href="#testing" title="Testing">Testing</a></li><li><a class="toc-href" href="#test-categories" title="Test categories">Test categories</a></li><li><a class="toc-href" href="#version-numbering" title="Version Numbering">Version Numbering</a></li><li><a class="toc-href" href="#branching-policy" title="Branching Policy">Branching Policy</a></li></ul></li><li><a class="toc-href" href="#coding-conventions" title="Coding conventions">Coding conventions</a><ul><li><a class="toc-href" href="#indentation" title="Indentation">Indentation</a></li><li><a class="toc-href" href="#other" title="Other">Other</a></li><li><a class="toc-href" href="#reformatting" title="Reformatting">Reformatting</a></li><li><a class="toc-href" href="#older-sources" title="Older sources">Older sources</a></li></ul></li></ul></div>
+<h3 id="river-development-process">River Development Process<a class="headerlink" href="#river-development-process" title="Permalink">&para;</a></h3>
+<div class="space-lg"></div>
+<h4 id="river-build-server">River build server<a class="headerlink" href="#river-build-server" title="Permalink">&para;</a></h4>
+<p>River is built on the Apache Hudson server.  The projects can be found <a href="https://hudson.apache.org/hudson/view/M-R/view/River/">here</a>. More on this process: <a href="ci.html">Continuous Integration</a></p>
+<div class="space-mn"></div>
+<h4 id="tracking-issues-and-changes">Tracking issues and changes<a class="headerlink" href="#tracking-issues-and-changes" title="Permalink">&para;</a></h4>
+<ul>
+<li>
+<p>A JIRA issue is required for any substantive change.
+In order to keep the list of JIRA issues under control, it is expected that any controversial issue or user request for a feature or design change be discussed on the dev list prior to entering it into JIRA.</p>
+</li>
+<li>
+<p>JIRA issues are not needed for small (e.g., typos) changes.</p>
+</li>
+<li>
+<p>Issue discussions
+The preferred place of discussion on issues is the river-dev mail list. A link to the beginning of the mail thread on the issue should be placed in the JIRA issue so that users looking through JIRA can easily view the thread of discussion on an issue. Please keep the Subject line the same so that the email thread hangs together.  It's also recommended that a summary/conclusion on the thread be recorded in the JIRA issue itself.</p>
+</li>
+</ul>
+<div class="space-mn"></div>
+<h4 id="handling-security-related-issues">Handling Security -related Issues<a class="headerlink" href="#handling-security-related-issues" title="Permalink">&para;</a></h4>
+<p>There are three options associated with the "Security Level" field in the JIRA instance:</p>
+<ul>
+<li>"None"</li>
+<li>"Security risk, visible to committers" - only committers have access to the issue with this option set</li>
+<li>"Security risk, visible to anyone" - the issue has a security risk associated with it, and the committers understand the impact. A resolution/fix has been developed.</li>
+</ul>
+<p>When a potential security -related issue is identified in the River sourcebase, initial discussion on it should occur on the private PPMC list.  If the person(s) who identified the issue are not on the PPMC, they should be included in the discussion.</p>
+<p>If the issue is acknowledged as a valid security issue, a JIRA issue needs to be created with the "Security Level" field marked to "Security risk, visible to committers".</p>
+<p>As soon as appropriate (for example, when the impact is understood and/or there is a resolution/fix developed), the "Security Level" should be changed to "Security risk, visible to anyone" and an explanation/discussion should occur in the broader River community on the river-dev list.</p>
+<div class="space-mn"></div>
+<h4 id="code-reviews">Code Reviews<a class="headerlink" href="#code-reviews" title="Permalink">&para;</a></h4>
+<ul>
+<li>
+<p>for public API changes:
+<a href="http://apache.org/foundation/glossary.html#ReviewThenCommit">RTC</a> These changes have potentially broad effects on developers and users, and therefore will require a code review and vote. Since some of these changes will affect the API docs ('specs'), everyone within the Jini/River community is encouraged to review and vote. The Committer votes are binding, but the sentiment of the entire community will be strongly considered.</p>
+</li>
+<li>
+<p>for all other changes:
+<a href="http://apache.org/foundation/glossary.html#CommitThenReview">CTR</a> Although CTR is what is specified, developers should feel comfortable requesting the list for peer review before committing.</p>
+</li>
+</ul>
+<div class="space-mn"></div>
+<h4 id="testing">Testing<a class="headerlink" href="#testing" title="Permalink">&para;</a></h4>
+<p>Developing test cases and running test suites are desired but not required prior to an integration.  If unit tests are
+created for a change, the developer is encouraged to add them to the JIRA issue for sharing. <br/>
+Here is a list of individually executable
+<a data-target="#myModal" data-toggle="modal" href="javascript:void(0);">test categories</a>.</p>
+<div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+<h4 class="modal-title" id="test-categories">Test categories<a class="headerlink" href="#test-categories" title="Permalink">&para;</a></h4>
+</div>
+<pre><code>  &lt;div class="modal-body"&gt;
+    &lt;div class="list-group"&gt;
+          &lt;a href="#" class="list-group-item"&gt;activation&lt;/a&gt;
+          &lt;a href="#" class="list-group-item"&gt;activation_spec&lt;/a&gt;
+          &lt;a href="#" class="list-group-item"&gt;allgroups&lt;/a&gt;
+</code></pre>
+<p><a class="list-group-item" href="#">basicinvocationdispatcher</a>
+<a class="list-group-item" href="#">basicinvocationdispatcher_spec</a>
+<a class="list-group-item" href="#">basicinvocationhandler</a>
+<a class="list-group-item" href="#">basicinvocationhandler_spec</a>
+<a class="list-group-item" href="#">basicobjectendpoint</a>
+<a class="list-group-item" href="#">basicobjectendpoint_spec</a>
+<a class="list-group-item" href="#">config</a>
+<a class="list-group-item" href="#">config_spec</a>
+<a class="list-group-item" href="#">constraint</a>
+<a class="list-group-item" href="#">constraint_spec</a>
+<a class="list-group-item" href="#">coreconstraint</a>
+<a class="list-group-item" href="#">coreconstraint_spec</a>
+<a class="list-group-item" href="#">discardproblem</a>
+<a class="list-group-item" href="#">discoverymanager</a>
+<a class="list-group-item" href="#">discoverymanager_impl</a>
+<a class="list-group-item" href="#">discoverymanager_spec</a>
+<a class="list-group-item" href="#">discoveryproviders</a>
+<a class="list-group-item" href="#">discoveryproviders_impl</a>
+<a class="list-group-item" href="#">discoveryservice</a>
+<a class="list-group-item" href="#">discoveryservice_impl</a>
+<a class="list-group-item" href="#">discoveryservice_spec</a>
+<a class="list-group-item" href="#">discoveryserviceevent</a>
+<a class="list-group-item" href="#">discoveryservicelease</a>
+<a class="list-group-item" href="#">end2end</a>
+<a class="list-group-item" href="#">end2end_impl</a>
+<a class="list-group-item" href="#">eventmailbox</a>
+<a class="list-group-item" href="#">eventmailbox_impl</a>
+<a class="list-group-item" href="#">eventmailbox_spec</a>
+<a class="list-group-item" href="#">export</a>
+<a class="list-group-item" href="#">export_spec</a>
+<a class="list-group-item" href="#">fiddleradmin</a>
+<a class="list-group-item" href="#">fiddlerfiddleradmin</a>
+<a class="list-group-item" href="#">fiddlerjoinadmin</a>
+<a class="list-group-item" href="#">id</a>
+<a class="list-group-item" href="#">id_spec</a>
+<a class="list-group-item" href="#">iiop</a>
+<a class="list-group-item" href="#">iiop_spec</a>
+<a class="list-group-item" href="#">impllocatordiscovery</a>
+<a class="list-group-item" href="#">impllookupdiscovery</a>
+<a class="list-group-item" href="#">implservicediscovery</a>
+<a class="list-group-item" href="#">implservicediscoveryevent</a>
+<a class="list-group-item" href="#">io</a>
+<a class="list-group-item" href="#">io_spec</a>
+<a class="list-group-item" href="#">javaspace</a>
+<a class="list-group-item" href="#">javaspace05_conformance</a>
+<a class="list-group-item" href="#">javaspace_conformance</a>
+<a class="list-group-item" href="#">javaspace_impl</a>
+<a class="list-group-item" href="#">javaspace_impl_admin</a>
+<a class="list-group-item" href="#">javaspace_impl_api</a>
+<a class="list-group-item" href="#">javaspace_impl_javaspace05</a>
+<a class="list-group-item" href="#">javaspace_impl_leasing</a>
+<a class="list-group-item" href="#">javaspace_impl_matching</a>
+<a class="list-group-item" href="#">javaspace_impl_notify</a>
+<a class="list-group-item" href="#">javaspace_impl_transaction</a>
+<a class="list-group-item" href="#">javaspace_spec</a>
+<a class="list-group-item" href="#">jeri</a>
+<a class="list-group-item" href="#">jeri_spec</a>
+<a class="list-group-item" href="#">joinmanager</a>
+<a class="list-group-item" href="#">joinmanager_impl</a>
+<a class="list-group-item" href="#">joinmanager_spec</a>
+<a class="list-group-item" href="#">jrmp</a>
+<a class="list-group-item" href="#">jrmp_spec</a>
+<a class="list-group-item" href="#">loader</a>
+<a class="list-group-item" href="#">loader_spec</a>
+<a class="list-group-item" href="#">locatordiscovery</a>
+<a class="list-group-item" href="#">locatordiscovery_impl</a>
+<a class="list-group-item" href="#">locatordiscovery_spec</a>
+<a class="list-group-item" href="#">lookupdiscovery</a>
+<a class="list-group-item" href="#">lookupdiscovery_impl</a>
+<a class="list-group-item" href="#">lookupdiscovery_spec</a>
+<a class="list-group-item" href="#">lookupservice</a>
+<a class="list-group-item" href="#">lookupservice_impl</a>
+<a class="list-group-item" href="#">lookupservice_spec</a>
+<a class="list-group-item" href="#">policyprovider</a>
+<a class="list-group-item" href="#">policyprovider_spec</a>
+<a class="list-group-item" href="#">proxytrust</a>
+<a class="list-group-item" href="#">proxytrust_spec</a>
+<a class="list-group-item" href="#">reliability</a>
+<a class="list-group-item" href="#">renewalmanager</a>
+<a class="list-group-item" href="#">renewalmanager_spec</a>
+<a class="list-group-item" href="#">renewalservice</a>
+<a class="list-group-item" href="#">renewalservice_impl</a>
+<a class="list-group-item" href="#">renewalservice_spec</a>
+<a class="list-group-item" href="#">scalability</a>
+<a class="list-group-item" href="#">security</a>
+<a class="list-group-item" href="#">security_spec</a>
+<a class="list-group-item" href="#">servicediscovery</a>
+<a class="list-group-item" href="#">servicediscovery_impl</a>
+<a class="list-group-item" href="#">servicediscovery_spec</a>
+<a class="list-group-item" href="#">servicediscoverycache</a>
+<a class="list-group-item" href="#">servicediscoverydiscovery</a>
+<a class="list-group-item" href="#">servicediscoveryevent</a>
+<a class="list-group-item" href="#">servicediscoverylookup</a>
+<a class="list-group-item" href="#">snapshot</a>
+<a class="list-group-item" href="#">spec</a>
+<a class="list-group-item" href="#">speclocatordiscovery</a>
+<a class="list-group-item" href="#">speclookupdiscovery</a>
+<a class="list-group-item" href="#">specservicediscovery</a>
+<a class="list-group-item" href="#">specservicediscoverycache</a>
+<a class="list-group-item" href="#">specservicediscoverydiscovery</a>
+<a class="list-group-item" href="#">specservicediscoveryevent</a>
+<a class="list-group-item" href="#">specservicediscoverylookup</a>
+<a class="list-group-item" href="#">start</a>
+<a class="list-group-item" href="#">start_impl</a>
+<a class="list-group-item" href="#">stress</a>
+<a class="list-group-item" href="#">test_set00</a>
+<a class="list-group-item" href="#">test_set01</a>
+<a class="list-group-item" href="#">test_set02</a>
+<a class="list-group-item" href="#">test_set03</a>
+<a class="list-group-item" href="#">test_set04</a>
+<a class="list-group-item" href="#">thread</a>
+<a class="list-group-item" href="#">thread_impl</a>
+<a class="list-group-item" href="#">txnmanager</a>
+<a class="list-group-item" href="#">txnmanager_impl</a>
+<a class="list-group-item" href="#">txnmanager_spec</a>
+<a class="list-group-item" href="#">url</a>
+<a class="list-group-item" href="#">url_spec</a>
+</p></div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+</div>
+</div>
+
+
+<div class="space-mn"></div>
+<h4 id="version-numbering">Version Numbering<a class="headerlink" href="#version-numbering" title="Permalink">&para;</a></h4>
+<p>Each Apache River deliverable has a version number of:</p>
+<p><code>m.n.r</code></p>
+<ul>
+<li><code>m</code> = major version</li>
+<li><code>n</code> = minor version</li>
+<li><code>r</code> = maintenance version</li>
+</ul>
+<p>The major version number will in general only be increased in case of major changes that might introduce compatibility problems or represent some fundamental improvements. The minor versions reflect the various feature releases, the last part of the version number reflects the maintenance release.</p>
+<div class="space-mn"></div>
+<h4 id="branching-policy">Branching Policy<a class="headerlink" href="#branching-policy" title="Permalink">&para;</a></h4>
+<p>Ongoing development for the next release takes place in the <code>/trunk</code>. Once feature complete for a (non maintenance) release the trunk is branched into <code>/branches/&lt;m.n&gt;</code> which in general also reflects the moment a release candidate is presented to the public in a fairly short period of time. Ongoing development continues in the <code>/trunk</code>, issues found against the release candidate will be fixed in <code>/branches/&lt;m.n&gt;</code> and likely merged into the <code>/trunk</code>.</p>
+<p>Once a release candidate is ready for a first customer release <code>/branches/&lt;m.n&gt;</code> is branched into <code>/tags/&lt;m.n&gt;.0</code>. When support is required for a particular release <code>m.n</code>, the development for a fix-release is conducted in <code>/branches/&lt;m.n&gt;</code>. When a bug-fix release is ready it is branched into <code>/tags/&lt;m.n.r&gt;</code> where <code>r</code> is a positive number and increased for each maintenance release.</p>
+<p>Although ongoing development should take place in <code>/trunk</code>, there is a <code>/skunk</code> branch that can be utilized for 'experimental' work that must not disturb the <code>/trunk</code>, that needs to be visible to others and/or might require participation of others. In general the lifetime of such branch should be short to give it a chance of successful integration into the <code>/trunk</code> when the 'experiment' has been found valuable.</p>
+<p><em>Summarized</em></p>
+<table class="table">
+<thead>
+<tr>
+<th>branch</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.../river/&lt;product&gt;/trunk</code></td>
+<td>mainline development</td>
+</tr>
+<tr>
+<td><code>.../river/&lt;product&gt;/branches</code></td>
+<td>maintenance branches</td>
+</tr>
+<tr>
+<td><code>.../river/&lt;product&gt;/tags</code></td>
+<td>frozen release tags</td>
+</tr>
+<tr>
+<td><code>.../river/&lt;product&gt;/skunk</code></td>
+<td>development and 'skunk works' branches</td>
+</tr></tbody></table>
+<pre>
+/trunk
+   |
+   |--------  /branches/2.1/
+   |        \
+   |         \ -------  /tags/2.1.0/
+   |          \
+   |           \ -------  /tags/2.1.1/
+   |            \
+   |
+   |--------  /branches/2.2/
+   |        \
+   |         \ -------  /tags/2.2.0/
+   |          \
+   |
+   |--------  /skunk/<catchy_name>
+   |
+   |
+   |--------  /branches/3.0/
+   |        \
+   |         \ -------  /tags/3.0.0/
+   |          \
+   |           \ -------  /tags/3.0.1/
+</catchy_name></pre>
+<div class="space-sm"></div>
+<h3 id="coding-conventions">Coding conventions<a class="headerlink" href="#coding-conventions" title="Permalink">&para;</a></h3>
+<div class="space-mn"></div>
+<h4 id="indentation">Indentation<a class="headerlink" href="#indentation" title="Permalink">&para;</a></h4>
+<p>Tabs are not used. Default indentation is 4 spaces.</p>
+<div class="space-mn"></div>
+<h4 id="other">Other<a class="headerlink" href="#other" title="Permalink">&para;</a></h4>
+<p>Contributors are advised to read the <a href="http://www.oracle.com/technetwork/java/codeconvtoc-136057.html">Code Conventions for the Java</a>
+and try to adhere as much as possible to these conventions.</p>
+<div class="space-mn"></div>
+<h4 id="reformatting">Reformatting<a class="headerlink" href="#reformatting" title="Permalink">&para;</a></h4>
+<p>If the reformatting involves a large part of the code,
+a clearly labeled 'reformatting' commit in between is recommended.
+Keeping your reformatting changes limited,
+reduces the change of merging conflicts by your fellow committers.</p>
+<div class="space-mn"></div>
+<h4 id="older-sources">Older sources<a class="headerlink" href="#older-sources" title="Permalink">&para;</a></h4>
+<p>We do not actively search and reformat source files
+that are not formatted according to this convention.</p>
+<p>Older sources are best viewed with tab stops at 8 space
+intervals.</p>
+
+    </div>
+    <hr>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 col-sm-1 col-md-1 col-lg-1">
+                <a href="http://apache.org" target="_blank"><img src="/images/apache-logo.png" width="40%"/></a>
+            </div>
+
+            <div class="col-xs-9 col-sm-11 col-md-11 col-lg-11">
+                <p>Copyright &#169; 2012-2021 <a href="http://www.apache.org/">The Apache Software Foundation</a>,
+                    Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version
+                        2.0</a>.
+                    <br/>
+                    Apache River, the Apache River logo, Apache and the Apache feather logo are trademarks of The
+                    Apache Software Foundation.
+                    <br/>
+                    All other marks mentioned may be trademarks or registered trademarks
+                    of their respective owners.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer></div>
+
+<!-- tooltip delay is too long, but could not find where it is set in the theme or bootstrap -->
+<script>
+$(document).ready(function(){
+    $('a').tooltip({delay: {show: 700, hide: 200}});
+});
+</script>
+</body>
+</html>

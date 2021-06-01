@@ -1,0 +1,307 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+    <!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE- 2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    -->
+
+    <title>Apache River - Building River</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta property="og:image" content="//www.apache.org/images/asf_logo.gif"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="/css/river.css" media="screen">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" media="screen">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <style type="text/css">
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}    </style>
+</head>
+
+<body style="padding-top: 50px;">
+<div class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#river-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/index.html"><img src="/images/river_logo.png">Apache River&trade;</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="river-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">Downloads <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/user-doc/releases.html">Releases</a></li>
+                    <li><a href="/user-doc/maven-artifacts.html">Maven artifacts</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">Documentation <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/user-doc/getting-started.html">Getting started</a></li>
+                    <li><a href="/user-doc/networking.html">Networking</a></li>
+                    <li><a href="/user-doc/glossary.html">Glossary</a></li>
+                    <li><a href="/user-doc/cookbook.html">Cookbook</a></li>
+                    <li><a href="/user-doc/supported-platforms.html">Supported platforms</a></li>
+                    <li><a href="/user-doc/resources.html">Resources</a></li>
+                    <li><a href="/user-doc/readings.html">Readings</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/user-doc/specification.html">Specification</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/release-doc/current/api/index.html">Javadoc</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">Community<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/user-doc/get-involved.html">Get involved</a></li>
+                    <li><a href="/user-doc/mailing-lists.html">Mailing lists</a></li>
+                    <li><a href="/user-doc/found-a-bug.html">Found a bug</a></li>
+                    <li><a href="/user-doc/website.html">Web site</a></li>
+                    <li><a href="/user-doc/people.html">People</a></li>
+                    <li><a href="/user-doc/success-stories.html">Success stories</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">Development <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/dev-doc/source-code.html">Source code</a></li>
+                    <li><a href="/dev-doc/development-process.html">Development process</a></li>
+                    <li><a href="/dev-doc/building-river.html">Building River</a></li>
+                    <li><a href="/dev-doc/ci.html">Continuous Integration</a></li>
+                    <li><a href="/dev-doc/building-a-release.html">Building a release</a></li>
+                    <li><a href="https://issues.apache.org/jira/browse/RIVER">Issue tracker</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">The Foundation <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org">Apache</a></li>
+                    <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                    <li><a href="http://www.apache.org/foundation/sponsorship.html">Donate</a></li>
+                    <li><a href="http://www.apache.org/foundation/how-it-works.html">How it
+                        works</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <form class="navbar-form navbar-right" role="search"
+              name="search" id="search" action="http://www.google.com/search" method="get">
+            <input value="river.apache.org" name="sitesearch" type="hidden"/>
+            <div class="form-group input-group" style="padding: 6px">
+                <input type="text" name="q" id="query" placeholder="Google custom search" class="form-control input-sm">
+                <span class="input-group-btn">
+    <button type="submit" class="btn btn-default btn-sx btn-sm">
+        <i class="glyphicon glyphicon-search" style="width: 15; height: 17"></i>
+    </button>
+    </span>
+            </div>
+        </form>
+
+    </div>
+</div>
+</div>
+
+
+<div class="container">
+    <div class="space-lg"></div>
+    <div class="clear"></div>
+    <div id="content">
+    <h2 id="building-river">Building River<a class="headerlink" href="#building-river" title="Permalink">&para;</a></h2>
+<div class="space-sm"></div>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink">&para;</a></h3>
+<p>In order to build River, you need the following tools:</p>
+<ul>
+<li>Oracle JDK 1.6+</li>
+<li>Apache ANT 1.8+</li>
+</ul>
+<p>The rest is included in the source archive, and in the SVN.</p>
+<p>This article also describes how to setup your IDE to compile River.</p>
+<div class="space-mn"></div>
+<h3 id="spaces-in-paths">Spaces in paths<a class="headerlink" href="#spaces-in-paths" title="Permalink">&para;</a></h3>
+<p><span class="label label-warning">Warning</span></p>
+<p>The build process does not play nicely if you have spaces in your path names.  This includes the install path of the JDK.</p>
+<p>This can be circumvented, at least on a Windows/Cygwin by using the first 6 characters of the name with a space in, and postfixing a tilde and the number 1.</p>
+<p>For example; <code>C:\Program Files</code> would become; <code>C:\Progra~1</code></p>
+<p>If the first six characters of your path name are not a unique name, for example if you have the two paths "C:\Program Files" and "C:\Program Something Else" then the number after the tilde may well be different.  It is suggested that you experiment using the Windows command shell to establish the correct 'tilde plus number' name for your path.</p>
+<p>So Windows users please be particular aware.</p>
+<p>If you are running on Windows, it is also advisable to use a forward slash '/' are the path separator.  This is acceptable to both Java and Ant, and has the added benefit that the paths will be correct if you decide to run the JTREG tests (some of which require a Unix-like/Cygwin environment to run scripts in).  This is particularly important for the <code>river.home</code> property which is inherited from in the <code>qa/build.xml</code> file and subsequently passed onto the various classes which make up the jtreg tests.</p>
+<div class="space-mn"></div>
+<h3 id="check-out-the-code">Check out the code<a class="headerlink" href="#check-out-the-code" title="Permalink">&para;</a></h3>
+<p>See <a href="source-code.html">this page</a> on how to check out the source code.</p>
+<div class="space-mn"></div>
+<h3 id="build-the-distribution">Build the distribution<a class="headerlink" href="#build-the-distribution" title="Permalink">&para;</a></h3>
+<p>River can be built simply by running Ant from where you checked the code out from.</p>
+<p>Assume "$RIVER_HOME" is where you have checked out the code to.</p>
+<pre><code>cd $RIVER_HOME
+ant
+</code></pre>
+<p>Will build all the River JARs required.  You will then find them in the $  {RIVER_HOME}/lib* directories.</p>
+<div class="space-mn"></div>
+<h3 id="setting-up-the-ide">Setting up the IDE<a class="headerlink" href="#setting-up-the-ide" title="Permalink">&para;</a></h3>
+<div class="space-mn"></div>
+<h4 id="eclipse">Eclipse<a class="headerlink" href="#eclipse" title="Permalink">&para;</a></h4>
+<p>Create your new IDE project using your prefered method (e.g. "Import from SVN" or create a new project using existing source, etc).</p>
+<p>First you will need to create a new JDK system library.  The normal JDK libraries that come in Eclipse have restrictions place on the <code>rt.jar</code> file which prevents the import of some proprietary Sun classes.</p>
+<p>Since River is built with Ant this isn't strictly necessary, but it is if you don't want the compiler error warnings flashing up.<br/>
+Currently, River should be built with JDK 6 (-source 5), so please ensure that you have this installed and your new library uses it.</p>
+<p>Then you need to add the JARs in <code>$RIVER_HOME/extlibs</code> to your classpath.</p>
+<p>That should everything that Eclipse needs to be happy with the River code.</p>
+<div class="space-mn"></div>
+<h4 id="netbeans">NetBeans<a class="headerlink" href="#netbeans" title="Permalink">&para;</a></h4>
+<ul>
+<li>Checkout the trunk.</li>
+<li>In Netbeans 7.2 do:
+<ul>
+<li>Open Project</li>
+<li>Navigate to the <code>netbeans</code> directory within the checked out files</li>
+<li>Open the <code>onebigjar</code> project.</li>
+<li>Click on build.</li>
+</ul>
+</li>
+</ul>
+<div class="space-lg"></div>
+<h2 id="testing-river">Testing River<a class="headerlink" href="#testing-river" title="Permalink">&para;</a></h2>
+<p>This build process runs the (limited) suite of unit tests that comes with River.  River is tested predominantly by using <a href="http://openjdk.java.net/jtreg/">jtreg</a> and the QA test suite.</p>
+<div class="space-mn"></div>
+<h3 id="the-junit-tests">The JUnit tests<a class="headerlink" href="#the-junit-tests" title="Permalink">&para;</a></h3>
+<p>The JUnit tests can be found in <code>$RIVER_HOME/test/src</code> you must also add the JARs found in <code>$RIVER_HOME/test/lib</code> onto the classpath for your tests.</p>
+<p>It's easiest to run these tests from your IDE.  In Eclipse, for example, once <code>$RIVER_HOME/test/src</code> is set at the test source directory, right-clicking the project and hitting "Run as JUnit test" is all that is required.</p>
+<div class="space-mn"></div>
+<h3 id="the-qa-test-suite">The QA Test Suite<a class="headerlink" href="#the-qa-test-suite" title="Permalink">&para;</a></h3>
+<p>The QA tests can also be run from the Ant script.  You must make sure the Ant you are using is using the correct JDK.  You can run "ant diagnostics" in the project directory to find out which JVM Ant is using.</p>
+<p>Make sure that you have the following in your build.properties file which you will need to create in <code>$RIVER_HOME</code>.</p>
+<pre><code>river.home=$RIVER_HOME
+jtreg.home=/path/to/jtreg/install
+jdk1.5.home=/path/to/java1.5 
+jtreg.dir=$RIVER_HOME/jtsk/qa/jtreg
+</code></pre>
+<div class="alert alert-info">
+Please note the remark above about using paths which contains spaces and the use of '/' over '\'.
+</div>
+<p>Execute the following:</p>
+<pre><code>cd $RIVER_HOME
+cd qa.run
+</code></pre>
+<div class="space-mn"></div>
+<h4 id="running-just-a-few-tests">Running just a few tests<a class="headerlink" href="#running-just-a-few-tests" title="Permalink">&para;</a></h4>
+<p>Running the entire QA suite tasks a significant portion of time; currently around the 17 hour mark.  It is therefore useful to be able to specify a subset of categories or even specific tests to run.</p>
+<div class="space-mn"></div>
+<h5>By settings in the properties file</h5>
+<p>When running the QA tests with Ant, this is done by including the following in the Ant build.properties file.</p>
+<pre><code># runs a specified category
+# e.g. run.categories=lookupservice
+run.categories=name_of_category
+
+# runs a specified test
+# e.g. run.tests=com/sun/jini/test/spec/constraint/coreconstraint/PrincipalElementsTest.td
+run.tests=path/to/test/TestName.td
+</code></pre>
+<div class="space-mn"></div>
+<h5>By specifying on the commandline</h5>
+<p>From the qa directory:</p>
+<pre><code>ant -Drun.tests=com/sun/jini/test/spec/constraint/coreconstraint/PrincipalElementsTest.td run-tests
+</code></pre>
+<p>Existing QA tests can be found in the following path; <code>$RIVER_HOME/qa/src/com/sun/jini/test/**"</code></p>
+<div class="space-mn"></div>
+<h4 id="categories">Categories<a class="headerlink" href="#categories" title="Permalink">&para;</a></h4>
+<p>You can find the test categories on <a href="testing-categories.html">Test categories</a></p>
+<div class="space-mn"></div>
+<h3 id="jtreg-tests">JTREG tests<a class="headerlink" href="#jtreg-tests" title="Permalink">&para;</a></h3>
+<p>You must first download and install jtreg following the instructions on their site.</p>
+<p>Some of these tests are run as BASH scripts, therefore, if running the jtreg tests on Windows a Cygwin (or similar) environment is necessary.</p>
+<p>The JTREG tests can then be run by execute the following:</p>
+<pre><code>cd $RIVER_HOME/qa
+ant harness-runtime
+ant jtreg
+</code></pre>
+<ul>
+<li>
+<p>If you should cancel a test run, you must run the following before you can start the run again.</p>
+<p>ant jtreg-teardown</p>
+</li>
+<li>
+<p>The <code>harness-runtime</code> target need only be run once, unless you have changed the core River code and wish to re-run the jtreg tests on the modified code</p>
+</li>
+</ul>
+<p>JTREG will create the directory <code>$RIVER_HOME/qa/jtreg/JTreport</code> which contains a report of the test run.</p>
+<div class="space-mn"></div>
+<h4 id="running-specific-jtreg-tests">Running specific JTREG tests<a class="headerlink" href="#running-specific-jtreg-tests" title="Permalink">&para;</a></h4>
+<p><em>todo</em></p>
+<div class="space-mn"></div>
+<h4 id="known-problems">Known Problems<a class="headerlink" href="#known-problems" title="Permalink">&para;</a></h4>
+<p>There are the following known problems with the jtreg tests:</p>
+<ol>
+<li>Running the tests in a Windows/Cygwin environment is not 100% working yet</li>
+<li>Some of the tests require a Kerberos environment, so these will obviously fail when no such setup is available</li>
+<li>It is known that test <code>net/jini/url/httpmd/TestEqual.java</code> fails.  Please see <a href="https://issues.apache.org/jira/browse/RIVER-375">Jira issue River-375</a> for details.</li>
+</ol>
+
+    </div>
+    <hr>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 col-sm-1 col-md-1 col-lg-1">
+                <a href="http://apache.org" target="_blank"><img src="/images/apache-logo.png" width="40%"/></a>
+            </div>
+
+            <div class="col-xs-9 col-sm-11 col-md-11 col-lg-11">
+                <p>Copyright &#169; 2012-2021 <a href="http://www.apache.org/">The Apache Software Foundation</a>,
+                    Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version
+                        2.0</a>.
+                    <br/>
+                    Apache River, the Apache River logo, Apache and the Apache feather logo are trademarks of The
+                    Apache Software Foundation.
+                    <br/>
+                    All other marks mentioned may be trademarks or registered trademarks
+                    of their respective owners.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer></div>
+
+<!-- tooltip delay is too long, but could not find where it is set in the theme or bootstrap -->
+<script>
+$(document).ready(function(){
+    $('a').tooltip({delay: {show: 700, hide: 200}});
+});
+</script>
+</body>
+</html>

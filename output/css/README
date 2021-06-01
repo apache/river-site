@@ -1,0 +1,4 @@
+For a given theme to work every css file listed at that theme (including the boostrap ones!) has to be downloaded
+and put into their place.
+
+river.css contains some further additions needed.
