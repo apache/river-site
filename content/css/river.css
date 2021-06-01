@@ -1,0 +1,65 @@
+/* apache river stylesheet */
+
+div.codehilite pre {
+  background-color: #f5f5f5 ;
+  margin: 5px 15px 5px 15px ;
+  padding: 1em 1em 1em 1em ;
+}
+
+.space-mn {
+    padding: 5px
+}
+.space-sm {
+    padding: 10px
+}
+
+.space-md {
+    padding: 15px
+}
+
+.space-lg {
+    padding: 20px
+}
+
+.splash {
+    padding: 9em 0 2em;
+    background-color: #141d27;
+    background-image: url(/images/duna1b.jpg);
+    background-size: 100%;
+    background-attachment: scroll;
+    background-repeat:no-repeat;
+    text-align: left
+}
+
+.splash h2 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.splash .logo {
+    width: 160px
+}
+
+.splash #social {
+    margin: 2em 0
+}
+
+.splash .alert {
+    margin: 2em 0
+}
+
+.list-group-item {
+  padding: 2px 12px;
+}
+
+.navbar-fixed-top {
+  max-height: 50px;
+}
+
+.navbar-brand > img {
+  display: inline;
+}
+
+.navbar-brand {
+  padding: 5px 5px;
+}
