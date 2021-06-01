@@ -9,6 +9,8 @@ River uses [Subversion](http://subversion.tigris.org/) to manage its source code
 
 The source code for the various deliverables of Apache River can be freely browsed at <http://svn.apache.org/viewvc/river/>. 
 
+&nbsp;
+
 #### Anonymous access
 
 
@@ -21,6 +23,7 @@ release was in the 2.2 branch.
 
     svn checkout http://svn.apache.org/repos/asf/river/jtsk/branches/2.2
 
+&nbsp;
 
 #### Access from behind a firewall
 
@@ -30,6 +33,7 @@ you can try to access it via HTTPS:
 
     svn checkout https://svn.apache.org/repos/asf/river/jtsk/trunk river
 
+&nbsp;
 
 #### Access through a proxy
 
@@ -49,6 +53,7 @@ Example : Edit the 'servers' file and add something like :
     http-proxy-host = your.proxy.name
     http-proxy-port = 3128
 
+&nbsp;
 
 #### Submitting a Patch
 
@@ -61,6 +66,7 @@ following command:
 
 If you've added new files, remember to "svn add" them so they get included in the diff.
 
+&nbsp;
 
 #### Developer Access
 

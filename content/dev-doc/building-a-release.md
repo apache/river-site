@@ -30,6 +30,7 @@ Add your key to the KEYS file in the repo
 
 
 <div class="space-mn"></div>
+
 ### Gather Release Notes From Jira
 
 First [manage the versions][5] of River using Jira.  Make sure there is an appropriate release that Jira issues are have been assigned to.  You can then view the [Roadmap][4] screen in Jira to create the release and make sure that the correct Jira issues are associated to it.

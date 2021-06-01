@@ -9,11 +9,11 @@ Here are the current committers to the Apache River project:
 
 | PMC   | Name | Organization |
 |-------|------|--------------|
-| ***** |Roy T. Fielding|Adobe *(chair pro-tem)*|
-| ***** |Dennis Reedy|Asarian Technologies LLC|
-| ***** |Dan Rollo||
-| ***** |Patricia Shanahan||
-| ***** |Bryan Thompson||
+| __*__ |Roy T. Fielding|Adobe *(chair pro-tem)*|
+| __*__ |Dennis Reedy|Asarian Technologies LLC|
+| __*__ |Dan Rollo||
+| __*__ |Patricia Shanahan||
+| __*__ |Bryan Thompson||
 
 If you would like to contribute to Apache River,
 please engage on the [mailing lists](mailing-lists.html)

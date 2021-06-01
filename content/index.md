@@ -7,14 +7,12 @@ license: https://www.apache.org/licenses/LICENSE-2.0
         and advancement of Jini technology.</h2>
 
 </div>
-
 <div class="alert alert-success" style="font-size: 17px; margin: 5% 10%">
   River is the implementation of <a href="https://en.wikipedia.org/wiki/Jini">Jini</a> service oriented architecture. It defines
       a programming model which both exploits and extends Java technology to enable the construction of secure, distributed
       systems consisting of federations of services and clients. Jini technology can be used to build adaptive network
       systems that are scalable, evolvable and flexible as typically required in dynamic computing environments.
 </div>
-
 <div class="container main">
     <div class="row">
         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-6 description-container">
@@ -32,8 +30,6 @@ license: https://www.apache.org/licenses/LICENSE-2.0
             <span class="fa fa-angle-right"></span> Service, client, registry and class-server: on-demand distribution of compiled code.<br>
         <div class="space-sm"></div>
         </div>
-
-
         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-6 description-container">
             <h4><i class="fa fa-gear"></i> Basic services</h4>
             <p>Several basic services are available for locking, distributed events, leasing, transactions, etc.</p>
@@ -44,5 +40,4 @@ license: https://www.apache.org/licenses/LICENSE-2.0
             called JavaSpaces is part of the project.</p>
         </div>
     </div>
-
 </div>

@@ -184,5 +184,5 @@ As soon as River community decides these improvements can be integrated back.
      1. [European Patent Office, The Netherlands](http://www.epo.org/)
      1. [Magneti Marelli Motorsport, Italy](http://www.magnetimarelli.com/racing/racdwn.htm)
  - [JavaWorld](http://www.javaworld.com/javaworld/jw-10-2001/jw-1005-jiniinterview.html) interview with Dr. Ted Achacoso from GroupServe
- - [Jan Newmarch's Guide to Jini Technologies](http://jan.newmarch.name/java/jini/tutorial/Overview.html#Success Stories) contains a section on Jini successes
+ - [Jan Newmarch's Guide to Jini Technologies](http://jan.newmarch.name/java/jini/tutorial/Overview.html#Success%20Stories) contains a section on Jini successes
 
