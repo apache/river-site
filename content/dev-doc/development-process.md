@@ -5,6 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 [TOC]
 
 ### River Development Process
+
 <div class="space-lg"></div>
 
 #### River build server
@@ -12,6 +13,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 River is built on the Apache Hudson server.  The projects can be found [here](https://hudson.apache.org/hudson/view/M-R/view/River/). More on this process: [Continuous Integration](ci.html)
 
 <div class="space-mn"></div>
+
 #### Tracking issues and changes
 
 * A JIRA issue is required for any substantive change.
@@ -24,6 +26,7 @@ The preferred place of discussion on issues is the river-dev mail list. A link t
 
 
 <div class="space-mn"></div>
+
 #### Handling Security -related Issues
 
 There are three options associated with the "Security Level" field in the JIRA instance:
@@ -38,6 +41,7 @@ If the issue is acknowledged as a valid security issue, a JIRA issue needs to be
 As soon as appropriate (for example, when the impact is understood and/or there is a resolution/fix developed), the "Security Level" should be changed to "Security risk, visible to anyone" and an explanation/discussion should occur in the broader River community on the river-dev list.
 
 <div class="space-mn"></div>
+
 #### Code Reviews
 
 * for public API changes:
@@ -48,6 +52,7 @@ As soon as appropriate (for example, when the impact is understood and/or there 
 
 
 <div class="space-mn"></div>
+
 #### Testing
 
 Developing test cases and running test suites are desired but not required prior to an integration.  If unit tests are
@@ -198,6 +203,7 @@ Here is a list of individually executable
 
 
 <div class="space-mn"></div>
+
 #### Version Numbering
 
 Each Apache River deliverable has a version number of:
@@ -212,6 +218,7 @@ The major version number will in general only be increased in case of major chan
 
 
 <div class="space-mn"></div>
+
 #### Branching Policy
 
 Ongoing development for the next release takes place in the `/trunk`. Once feature complete for a (non maintenance) release the trunk is branched into `/branches/<m.n>` which in general also reflects the moment a release candidate is presented to the public in a fairly short period of time. Ongoing development continues in the `/trunk`, issues found against the release candidate will be fixed in `/branches/<m.n>` and likely merged into the `/trunk`.
@@ -256,18 +263,22 @@ Although ongoing development should take place in `/trunk`, there is a `/skunk` 
 
 
 <div class="space-sm"></div>
+
 ### Coding conventions
 
 <div class="space-mn"></div>
+
 #### Indentation
 Tabs are not used. Default indentation is 4 spaces.
 
 <div class="space-mn"></div>
+
 #### Other
 Contributors are advised to read the [Code Conventions for the Java](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
 and try to adhere as much as possible to these conventions.
 
 <div class="space-mn"></div>
+
 #### Reformatting
 If the reformatting involves a large part of the code,
 a clearly labeled 'reformatting' commit in between is recommended.
@@ -275,6 +286,7 @@ Keeping your reformatting changes limited,
 reduces the change of merging conflicts by your fellow committers.
 
 <div class="space-mn"></div>
+
 #### Older sources
 We do not actively search and reformat source files
 that are not formatted according to this convention.

@@ -5,6 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 ## Building River
 
 <div class="space-sm"></div>
+
 ### Prerequisites
 In order to build River, you need the following tools:
 
@@ -16,6 +17,7 @@ The rest is included in the source archive, and in the SVN.
 This article also describes how to setup your IDE to compile River.
 
 <div class="space-mn"></div>
+
 ### Spaces in paths
 <span class="label label-warning">Warning</span>
 
@@ -33,11 +35,13 @@ If you are running on Windows, it is also advisable to use a forward slash '/' a
 
 
 <div class="space-mn"></div>
+
 ### Check out the code
 
 See [this page](source-code.html) on how to check out the source code.
 
 <div class="space-mn"></div>
+
 ### Build the distribution
 
 River can be built simply by running Ant from where you checked the code out from.
@@ -50,8 +54,11 @@ Assume "$RIVER_HOME" is where you have checked out the code to.
 Will build all the River JARs required.  You will then find them in the $  {RIVER_HOME}/lib* directories.
 
 <div class="space-mn"></div>
+
 ### Setting up the IDE
+
 <div class="space-mn"></div>
+
 #### Eclipse
 
 Create your new IDE project using your prefered method (e.g. "Import from SVN" or create a new project using existing source, etc).  
@@ -64,7 +71,9 @@ Currently, River should be built with JDK 6 (-source 5), so please ensure that y
 Then you need to add the JARs in `$RIVER_HOME/extlibs` to your classpath.  
 
 That should everything that Eclipse needs to be happy with the River code.
+
 <div class="space-mn"></div>
+
 #### NetBeans
   * Checkout the trunk.
   * In Netbeans 7.2 do: 
@@ -75,11 +84,13 @@ That should everything that Eclipse needs to be happy with the River code.
 
 
 <div class="space-lg"></div>
+
 ## Testing River
 
 This build process runs the (limited) suite of unit tests that comes with River.  River is tested predominantly by using [jtreg](http://openjdk.java.net/jtreg/) and the QA test suite.
 
 <div class="space-mn"></div>
+
 ### The JUnit tests
 
 The JUnit tests can be found in `$RIVER_HOME/test/src` you must also add the JARs found in `$RIVER_HOME/test/lib` onto the classpath for your tests.
@@ -87,6 +98,7 @@ The JUnit tests can be found in `$RIVER_HOME/test/src` you must also add the JAR
 It's easiest to run these tests from your IDE.  In Eclipse, for example, once `$RIVER_HOME/test/src` is set at the test source directory, right-clicking the project and hitting "Run as JUnit test" is all that is required.
 
 <div class="space-mn"></div>
+
 ### The QA Test Suite
 The QA tests can also be run from the Ant script.  You must make sure the Ant you are using is using the correct JDK.  You can run "ant diagnostics" in the project directory to find out which JVM Ant is using.
 
@@ -107,10 +119,12 @@ Execute the following:
     cd qa.run
 
 <div class="space-mn"></div>
+
 #### Running just a few tests
 Running the entire QA suite tasks a significant portion of time; currently around the 17 hour mark.  It is therefore useful to be able to specify a subset of categories or even specific tests to run. 
 
 <div class="space-mn"></div>
+
 ##### By settings in the properties file
 When running the QA tests with Ant, this is done by including the following in the Ant build.properties file.
 
@@ -123,6 +137,7 @@ When running the QA tests with Ant, this is done by including the following in t
     run.tests=path/to/test/TestName.td
 
 <div class="space-mn"></div>
+
 ##### By specifying on the commandline
 From the qa directory:
     
@@ -131,10 +146,12 @@ From the qa directory:
 Existing QA tests can be found in the following path; `$RIVER_HOME/qa/src/com/sun/jini/test/**"`
 
 <div class="space-mn"></div>
+
 #### Categories
 You can find the test categories on [Test categories](testing-categories.html)
 
 <div class="space-mn"></div>
+
 ### JTREG tests
 
 You must first download and install jtreg following the instructions on their site.
@@ -156,11 +173,13 @@ The JTREG tests can then be run by execute the following:
 JTREG will create the directory `$RIVER_HOME/qa/jtreg/JTreport` which contains a report of the test run.
 
 <div class="space-mn"></div>
+
 #### Running specific JTREG tests
 
 _todo_
 
 <div class="space-mn"></div>
+
 #### Known Problems
 There are the following known problems with the jtreg tests:
 

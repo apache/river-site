@@ -17,7 +17,6 @@ from what you'll see below, so you can progress with the binary release if you w
 If you are going to use the latest release then you will still need to download (from the SVN trunk) some of the
 Windows BAT files mentioned below.  *nix sh scripts of those same batch files will appear shortly.
 
-####
 <div class="panel panel-default">
 <div class="panel-heading">Environment Setup</div>
   <div class="panel-body">
@@ -26,14 +25,14 @@ The following instructions all assume that you have checked out River to some di
 to as `$RIVER_HOME`.  Further, you have changed directory into `$RIVER_HOME/examples/hello`.
 
 <div class="alert alert-info">
-  Run all scripts from the `hello` directory
-</div>
 
+Run all scripts from the `hello` directory
+
+</div>
 
   - Change directory to $RIVER_HOME
   - Use Ant to build River, i.e. `ant all.build`
 
-####
 #### Running Code Which Uses River Services
 
 Since River uses dynamic code downloading, we need to grant various permissions to our JVM to allow that.  In the
@@ -59,12 +58,9 @@ Also, before doing anything with any River code you need to set an appropriate s
 done only once per program.
 
     System.setSecurityManager(new RMISecurityManager());
+
   </div>
 </div>
-
-
-
-####
 <div class="panel panel-default">
 <div class="panel-heading">Starting the HTTP server</div>
   <div class="panel-body">
@@ -80,8 +76,10 @@ See [3.2 How codebase is used in Java RMI](http://download.oracle.com/javase/1.5
 more details.
 
 <div class="alert alert-info">
+
   - Change to directory to `$RIVER_HOME/examples/hello/` <br/>
   - Execute the script; `scripts/httpd.bat` <br/>
+
 </div>
 
 #### Testing it
@@ -89,12 +87,9 @@ more details.
 To test that the HTTP server is running correctly use wget or your web browser on the following URL
 
  - http://localhost:8080/reggie-dl.jar
+
   </div>
 </div>
-
-
-
-####
 <div class="panel panel-default">
 <div class="panel-heading">Starting a Service Registrar (Lookup Service)</div>
   <div class="panel-body">
@@ -108,8 +103,10 @@ federated space.
 Broadly speaking (although not 100% accurately) you need a Lookup Service in order to be able to find other services to use.
 
 <div class="alert alert-info">
+
   - Change to directory to `$RIVER_HOME/examples/hello/` <br/>
   - Execute the script; `scripts/jrmp-reggie.bat` <br/>
+
 </div>
 
 
@@ -162,11 +159,9 @@ not your Lookup Service is running.
 
 This approach can be modified if you know which hosts on the subnet _might_ be running lookup services.  You can
 define and pass this list to the `LookupDiscovery` constructor.
+
 </div>
 </div>
-
-
-####
 <div class="panel panel-default">
 <div class="panel-heading">Starting a Java Space</div>
   <div class="panel-body">
@@ -178,8 +173,10 @@ now we're going to start a Java Space, and find that.  Using the Java Space is o
 although the "how" is relatively straightforward.
 
 <div class="alert alert-info">
+
   - Change to directory to `$RIVER_HOME/examples/hello/` <br/>
   - Execute the script; `scripts/jrmp-outrigger-group` <br/>
+
 </div>
 
 ##### Testing it
@@ -214,11 +211,9 @@ Using the `ServiceDiscoveryManager` is similar;
     else  {
         System.out.println("No Java Space found.");
     }
+
 </div>
 </div>
-
-
-####
 <div class="panel panel-default">
 <div class="panel-heading">Starting a Transaction Service</div>
   <div class="panel-body">
@@ -228,8 +223,10 @@ Using the `ServiceDiscoveryManager` is similar;
 Because you'd like to find something that will give you a nice distributed transaction.
 
 <div class="alert alert-info">
+
   - Change to directory to `$RIVER_HOME/examples/hello/` <br/>
   - Execute the script; `scripts/jrmp-mahalo-group` <br/>
+
 </div>
 
 ##### Testing it
@@ -237,5 +234,6 @@ Because you'd like to find something that will give you a nice distributed trans
 Testing it is done in the same way as for the Java Space.  However, the constructor of the `ServiceTemplate` changes.
 
     ServiceTemplate template = new ServiceTemplate(null, new Class[)  { TransactionManager.class }, new Entry[0](0.html));
+
 </div>
 </div>

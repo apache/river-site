@@ -1,7 +1,7 @@
 Title: Future direction
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-#The Future Direction of River
+# The Future Direction of River
 
 There is currently a discussion on the dev mailing list which touches on the future of River.  In particular if the focus of River should be geared towards direct support of "application" developers, support of developers writing "down stream" projects or both.
 

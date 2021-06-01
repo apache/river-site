@@ -10,6 +10,7 @@ Apache River releases are available under the [Apache License, Version 2.0](http
 
 
 <div class="space-mn"></div>
+
 ### Apache River v3.0.0 (Released October 5, 2016)
 
 This is the "Jini Technology Starter Kit", or "JTSK", i.e. the complete source for River and the infrastructure services.
@@ -24,6 +25,7 @@ _Note:_ No jar files published in Maven Central at present.
 
 
 <div class="space-mn"></div>
+
 ### Apache River Examples v1.0 (Released Aug 10, 2015)
 
 The examples project contains a set of introductory examples of River services and clients.  This project builds 
@@ -39,9 +41,11 @@ Unpack the examples project and follow the instructions in 'README.md' at the to
 
 
 <div class="space-lg"></div>
+
 ## Archived Releases
 
 <div class="space-mn"></div>
+
 ### Apache River v2.2.3 (Released Feb 21, 2016)
 
 _Note:_ To experiment with River, you generally don't need to build from source.  You're probably better off starting with the the
@@ -53,6 +57,7 @@ examples project, which will automatically get the prebuilt jar files from Maven
 * [apache-river-2.2.3-doc.tar.gz](http://www.apache.org/dyn/closer.cgi/river/river-2.2.3/apache-river-2.2.3-bin.tar.gz) ([PGP](http://www.apache.org/dist/river/river-2.2.3/apache-river-2.2.3-doc.tar.gz.asc), [SHA1](http://www.apache.org/dist/river/river-2.2.3/apache-river-2.2.3-doc.tar.gz.sha))
 
 <div class="space-mn"></div>
+
 ### Apache River v2.2.2 (Released Nov. 18, 2013)
 
 * [apache-river-2.2.2-src.zip](http://archive.apache.org/dist/river/river-2.2.2/apache-river-2.2.2-src.zip) ([PGP](http://www.apache.org/dist/river/river-2.2.2/apache-river-2.2.2-src.zip.asc), [SHA1](http://www.apache.org/dist/river/river-2.2.2/apache-river-2.2.2-src.zip.sha))
@@ -62,6 +67,7 @@ examples project, which will automatically get the prebuilt jar files from Maven
 
 
 <div class="space-mn"></div>
+
 ### Apache River v2.2.1 (Released May 4, 2013)
 
 * [apache-river-2.2.1-src.zip](http://archive.apache.org/dist/river/river-2.2.1/apache-river-2.2.1-src.zip) ([PGP](http://www.apache.org/dist/river/river-2.2.1/apache-river-2.2.1-src.zip.asc), [SHA1](http://www.apache.org/dist/river/river-2.2.1/apache-river-2.2.1-src.zip.sha))
@@ -71,6 +77,7 @@ examples project, which will automatically get the prebuilt jar files from Maven
 
 
 <div class="space-mn"></div>
+
 ### Apache River v2.2.0 (First Top Level Project release)
 
 * [apache-river-2.2.0-src.zip](http://archive.apache.org/dist/river/river-2.2.0/apache-river-2.2.0-src.zip) ([PGP](http://www.apache.org/dist/river/river-2.2.0/apache-river-2.2.0-src.zip.asc), [SHA1](http://www.apache.org/dist/river/river-2.2.0/apache-river-2.2.0-src.zip.sha))
@@ -80,6 +87,7 @@ examples project, which will automatically get the prebuilt jar files from Maven
 
 
 <div class="space-lg"></div>
+
 ## Continuous snapshots
 Download the build artifacts from our [trunk build](https://builds.apache.org/pview/job/River-trunk-jdk7/lastSuccessfulBuild)
 
@@ -98,6 +106,7 @@ and the 2.1.x releases made during incubation are available from the [Incubator 
 
 
 <div class="space-lg"></div>
+
 ## PGP Signatures
 
 All of the release distribution packages have been digitally signed (using PGP or GPG) by the Apache Group members that constructed them. There will be an accompanying distribution.asc file in the same directory as the distribution. The PGP keys can be found in the MIT key repository (hkp://pgp.mit.edu), the OpenPGP Public Key repository (hkp://subkeys.pgp.net), and within this project's KEYS file, which is located within each download directory.

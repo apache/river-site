@@ -8,22 +8,25 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 
 <div class="space-mn"></div>
+
 ### KEYS file
 
 Add your key to the KEYS file in the repo
 
 
 <div class="space-mn"></div>
+
 ### Checkout The Source
 
     svn checkout https://svn.apache.org/repos/asf/river/jtsk/trunk river
 
 
 <div class="space-mn"></div>
+
 ### Pre release checks
 
- * River-trunk should run successful.
- * River-verify should run successful. (not yet?)
+* River-trunk should run successful.
+* River-verify should run successful. (not yet?)
 
 
 <div class="space-mn"></div>
@@ -41,6 +44,7 @@ The release notes need to be pasted into;
 
 
 <div class="space-mn"></div>
+
 ### Update Version Numbers
 
 There are version numbers in the following places that need to be updated with the new release number/name.
@@ -52,30 +56,35 @@ In the above HTML page, there is also a section on "changes by component" which 
 
 
 <div class="space-mn"></div>
+
 ### Branch the repository
 
     svn cp https://svn.apache.org/repos/asf/river/jtsk/trunk https://svn.apache.org/repos/asf/river/jtsk/branches/$VERSION
 
 
 <div class="space-mn"></div>
+
 ### Tag the repository
 
     svn cp https://svn.apache.org/repos/asf/river/jtsk/trunk https://svn.apache.org/repos/asf/river/jtsk/tags/$VERSION
 
 
 <div class="space-mn"></div>
+
 ### Build the release products
 
     ant -Dversion=$VERSION clean release
 
 
 <div class="space-mn"></div>
+
 ### Rat Reports
 
     ./rat_reports.sh
 
 
 <div class="space-mn"></div>
+
 ### Sign the release
 
   - [General Apache Signing Details][1]
@@ -90,6 +99,7 @@ In the above HTML page, there is also a section on "changes by component" which 
 
 
 <div class="space-mn"></div>
+
 ### Test the release
 
     cp dist/apache-river-$VERSION.tar.gz $SOMEWHERE_ELSE
@@ -100,6 +110,7 @@ In the above HTML page, there is also a section on "changes by component" which 
 
 
 <div class="space-mn"></div>
+
 ### Upload the release
 
     scp RAT* username@people.apache.org:~/public_html/river/
@@ -108,6 +119,7 @@ In the above HTML page, there is also a section on "changes by component" which 
 
 
 <div class="space-mn"></div>
+
 ### Allow the community to evaluate the release products
 
     * announce availability of candidate on river-dev.
@@ -115,6 +127,7 @@ In the above HTML page, there is also a section on "changes by component" which 
 
 
 <div class="space-mn"></div>
+
 ### Publish release on website
  * checkout the site 
  * Extract the javadocs from the release archive into ...

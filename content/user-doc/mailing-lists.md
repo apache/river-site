@@ -5,6 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 ### Mailing Lists
 
 <div class="space-mn"></div>
+
 #### user@river.apache.org
 
 This list is for people using Apache ACE. Please note that during incubation, we only had a developer list, which means

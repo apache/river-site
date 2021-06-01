@@ -5,7 +5,9 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 ### Success Stories
 
 <div class="space-mn"></div>
+
 #### [![Travellinck](../images/travellinck_logo.jpg)](https://travellinck.com)
+
 <blockquote>
 <small>
 <p>
@@ -49,18 +51,22 @@ Dawid Loubser
 </blockquote>
 
 <div class="space-mn"></div>
+
 #### [![Blazegraph](../images/blazegraph_logo.png)](https://www.blazegraph.com)
 Blazegraph™ is a ultra high-performance graph database supporting Apache TinkerPop™ and RDF/SPARQL APIs.
 It supports up to 50 Billion edges on a single machine.
 
 
 <div class="space-mn"></div>
+
 #### [![GigaSapces](../images/gigaspaces_logo.png)](https://www.gigaspaces.com)
 GigaSpaces provides the leading in-memory computing platform for fast data analytics and extreme transaction processing.
 
 
 <div class="space-mn"></div>
+
 #### [![Sucden Financial Limited](../images/sucden_logo.jpg)](http://www.sucdenfinancial.com)
+
 <blockquote>
 <small>
 <p>
@@ -114,6 +120,7 @@ Front Office Development Manager, Sucden Financial Limited.
 </blockquote>
 
 <div class="space-mn"></div>
+
 #### Blitz
 A performant, persistent implementation of the JavaSpaces API, which is much more suitable for enterprise-grade use
 than the (in-memory only) reference implementation, Outrigger [see here](https://github.com/dancres/blitzjavaspaces).
@@ -129,6 +136,7 @@ A re-packaging of the Blitz project to build with Maven is available [here](http
 -->
 
 <div class="space-mn"></div>
+
 #### Rio
 [Rio](http://www.rio-project.org)  is an open source technology that provides a dynamic architecture for developing, deploying and managing distributed systems composed of services.
 
@@ -149,6 +157,7 @@ Key features include:
       1. Maven based artifact resolution
 
 <div class="space-mn"></div>
+
 #### JGDMS - Java Global Discovered Micro Services
 The [github code](https://pfirmstone.github.io/JGDMS/) is forked off River trunk, just before the Ivy dependency build
 changes and the 3.0 release was branched.
@@ -168,6 +177,7 @@ Additions include:
 As soon as River community decides these improvements can be integrated back.
 
 <div class="space-sm"></div>
+
 #### Jini Success Stories
  - [Original Jini.org success stories](http://www.jini.org/wiki/Who_uses_Jini%3F), including:
      1. [TNO ICT, The Netherlands](http://www.tno.nl/informatie-_en_communicatietechnologie/)

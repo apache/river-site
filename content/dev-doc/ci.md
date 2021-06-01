@@ -11,7 +11,7 @@ After changes the builds are scheduled on the [Apache build server](https://buil
 The following jobs are used:
 
 Job | Role
-- | -
+--|--
 River-trunk-* | Builds the trunk, and check for compilation errors only
 River-QA-* | Builds the trunk and run QA tests 
 River-verify |
@@ -21,12 +21,14 @@ River-QA-Runtime |
 For their current status, see: <https://builds.apache.org/view/M-R/view/River/>
 
 <div class="space-mn"></div>
+
 ### River-trunk jobs
 The River trunk build is only run on Ubuntu. The naming scheme is:
 River-trunk-[jdkid]
 
 
 <div class="space-mn"></div>
+
 ### River-QA- jobs
 The River QA jobs naming scheme used is: River-QA-[platformid]-[jdkid] optional [-branchid]
 
@@ -35,6 +37,7 @@ and tests the river-runtime with the river-qa framework.
 
 
 <div class="space-mn"></div>
+
 ### Platforms and Jdks
 The current platforms are: Solaris, Ubuntu, Windows
 
