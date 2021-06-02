@@ -102,8 +102,8 @@ GigaSpaces provides the leading in-memory computing platform for fast data analy
  maintenance in a live scenario. The system can monitor itself and
  alert support staff of problems automatically.
 
- To visualize and manage the entire system, we built [an application on
- the Netbeans platform](http://netbeans.dzone.com/nb-financial-management-console)
+ To visualize and manage the entire system, we built an application on
+ the Netbeans platform
  where we can immediately see the interaction between services and generally monitor
  the health of the system as a whole. This is an ideal platform on
  which to present the Jini service UIs.
@@ -179,10 +179,8 @@ As soon as River community decides these improvements can be integrated back.
 <div class="space-sm"></div>
 
 #### Jini Success Stories
- - [Original Jini.org success stories](http://www.jini.org/wiki/Who_uses_Jini%3F), including:
-     1. [TNO ICT, The Netherlands](http://www.tno.nl/informatie-_en_communicatietechnologie/)
+ - Original Jini.org success stories, including:
      1. [European Patent Office, The Netherlands](http://www.epo.org/)
      1. [Magneti Marelli Motorsport, Italy](http://www.magnetimarelli.com/racing/racdwn.htm)
- - [JavaWorld](http://www.javaworld.com/javaworld/jw-10-2001/jw-1005-jiniinterview.html) interview with Dr. Ted Achacoso from GroupServe
  - [Jan Newmarch's Guide to Jini Technologies](http://jan.newmarch.name/java/jini/tutorial/Overview.html#Success%20Stories) contains a section on Jini successes
 
