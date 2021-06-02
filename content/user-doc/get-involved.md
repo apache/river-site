@@ -25,7 +25,7 @@ The Apache River project is being built by the open source community for the ope
 <blockquote class="blockquote">
 <small>
   "The idea is to prioritize the modernization of the River
-  specification into a set of language a d transport agnostic architectural
+  specification into a set of language and transport agnostic architectural
   principles. River currently supports architectural concepts like discovery,
   events, proxies and more! In reality, both the implementation language and
   communication transport are minor details."
@@ -47,5 +47,4 @@ The Apache River project is being built by the open source community for the ope
  * To discuss Apache River topics check out the [mailing lists](mailing-lists.html).
  * Bugs and other issues can be posted in the [RIVER](http://issues.apache.org/jira/browse/RIVER) issue tracker.
  See more info [here](found-a-bug.html).
- * The [River wiki](http://wiki.apache.org/river/) is open for anyone to contribute related documentation.
  * [Learn](website.html) how to deal with Web site related issues
