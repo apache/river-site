@@ -5,7 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 ### River source code
 
 
-River uses [Subversion](http://subversion.tigris.org/) to manage its source code. Instructions on Subversion use can be found [here](http://svnbook.red-bean.com).
+River uses [Subversion](https://subversion.apache.org/) to manage its source code. Instructions on Subversion use can be found [here](http://svnbook.red-bean.com).
 
 The source code for the various deliverables of Apache River can be freely browsed at <http://svn.apache.org/viewvc/river/>. 
 
