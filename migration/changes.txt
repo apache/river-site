@@ -1,0 +1,862 @@
+==== ./content/wot.md
+==== ./content/dev-doc/building-a-release.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+25a11
+> 
+31a18
+> 
+37a25
+> 
+44a33
+> 
+58a48
+> 
+69a60
+> 
+75a67
+> 
+81a74
+> 
+87a81
+> 
+93a88
+> 
+107a103
+> 
+117a114
+> 
+125a123
+> 
+132a131
+> 
+==== ./content/dev-doc/building-river.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+22a8
+> 
+33a20
+> 
+50a38
+> 
+55a44
+> 
+67a57
+> 
+68a59
+> 
+69a61
+> 
+81a74
+> 
+82a76
+> 
+92a87
+> 
+97a93
+> 
+104a101
+> 
+124a122
+> 
+128a127
+> 
+140a140
+> 
+148a149
+> 
+152a154
+> 
+173a176
+> 
+178a182
+> 
+==== ./content/dev-doc/development-process.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+22a8
+> 
+29a16
+> 
+41a29
+> 
+55a44
+> 
+65a55
+> 
+215a206
+> 
+229a221
+> 
+273a266
+> 
+276a270
+> 
+280a275
+> 
+285a281
+> 
+292a289
+> 
+==== ./content/dev-doc/roadmap.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./content/dev-doc/source-code.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+23c8
+< River uses [Subversion](http://subversion.tigris.org/) to manage its source code. Instructions on Subversion use can be found [here](http://svnbook.red-bean.com).
+---
+> River uses [Subversion](https://subversion.apache.org/) to manage its source code. Instructions on Subversion use can be found [here](http://svnbook.red-bean.com).
+27c12,13
+< ####
+---
+> &nbsp;
+> 
+39a26
+> &nbsp;
+41d27
+< ####
+49a36
+> &nbsp;
+51d37
+< ####
+69a56
+> &nbsp;
+71d57
+< ####
+82a69
+> &nbsp;
+84d70
+< ####
+==== ./content/dev-doc/ci.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+29c14
+< - | -
+---
+> --|--
+38a24
+> 
+44a31
+> 
+52a40
+> 
+==== ./content/user-doc/specification.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./content/user-doc/supported-platforms.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+22,23d6
+< ####
+< 
+26c9
+< -- | ----
+---
+> ---|-----
+33,34d15
+< ####
+< 
+38c19
+< ------- | -----
+---
+> --------|------
+57c38
+< ------ | -------
+---
+> -------|-------
+==== ./content/user-doc/get-involved.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+23a9
+> 
+39d24
+< 
+43c28
+<   specification into a set of language a d transport agnostic architectural
+---
+>   specification into a set of language and transport agnostic architectural
+52d36
+< 
+56d39
+< 
+60a44
+> 
+66d49
+<  * The [River wiki](http://wiki.apache.org/river/) is open for anyone to contribute related documentation.
+==== ./content/user-doc/resources.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./content/user-doc/releases.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+27a13
+> 
+41a28
+> 
+56a44
+> 
+59a48
+> 
+70a60
+> 
+79a70
+> 
+88a80
+> 
+97a90
+> 
+115a109
+> 
+==== ./content/user-doc/success-stories.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+22a8
+> 
+23a10
+> 
+66a54
+> 
+72a61
+> 
+77a67
+> 
+78a69
+> 
+114,115c105,106
+<  To visualize and manage the entire system, we built [an application on
+<  the Netbeans platform](http://netbeans.dzone.com/nb-financial-management-console)
+---
+>  To visualize and manage the entire system, we built an application on
+>  the Netbeans platform
+131a123
+> 
+146a139
+> 
+166a160
+> 
+185a180
+> 
+187,188c182
+<  - [Original Jini.org success stories](http://www.jini.org/wiki/Who_uses_Jini%3F), including:
+<      1. [TNO ICT, The Netherlands](http://www.tno.nl/informatie-_en_communicatietechnologie/)
+---
+>  - Original Jini.org success stories, including:
+191,192c185
+<  - [JavaWorld](http://www.javaworld.com/javaworld/jw-10-2001/jw-1005-jiniinterview.html) interview with Dr. Ted Achacoso from GroupServe
+<  - [Jan Newmarch's Guide to Jini Technologies](http://jan.newmarch.name/java/jini/tutorial/Overview.html#Success Stories) contains a section on Jini successes
+---
+>  - [Jan Newmarch's Guide to Jini Technologies](http://jan.newmarch.name/java/jini/tutorial/Overview.html#Success%20Stories) contains a section on Jini successes
+==== ./content/user-doc/networking.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./content/user-doc/people.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+27,31c12,16
+< | ***** |Roy T. Fielding|Adobe *(chair pro-tem)*|
+< | ***** |Dennis Reedy|Asarian Technologies LLC|
+< | ***** |Dan Rollo||
+< | ***** |Patricia Shanahan||
+< | ***** |Bryan Thompson||
+---
+> | __*__ |Roy T. Fielding|Adobe *(chair pro-tem)*|
+> | __*__ |Dennis Reedy|Asarian Technologies LLC|
+> | __*__ |Dan Rollo||
+> | __*__ |Patricia Shanahan||
+> | __*__ |Bryan Thompson||
+==== ./content/user-doc/readings.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+25,26c10,11
+<  - <a href="https://blogs.oracle.com/hinkmond/entry/easy_iot_sensor_on_boarding" data-toggle="tooltip" title="Making Internet of Things (IoT) Smarter with Java Technology and Deep Learning AI">Hinkmond Wong's Weblog</a>
+<  - <a href"http://www.eclipse.org/californium data-toggle="tooltip" title="The Californium (Cf) core provides the central framework with the protocol implementation to build your Internet of Things applications.">Californium</a>
+---
+>  - <a href="https://blogs.oracle.com/hinkmond/entry/easy_iot_sensor_on_boarding" data-toggle="tooltip" title="Making Internet of Things (IoT) Smarter with Java Technology and Deep Learning AI">Hinkmond Wong&#39;s Weblog</a>
+>  - <a href="http://www.eclipse.org/californium" data-toggle="tooltip" title="The Californium (Cf) core provides the central framework with the protocol implementation to build your Internet of Things applications.">Californium</a>
+==== ./content/user-doc/glossary.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./content/user-doc/mailing-lists.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+22a8
+> 
+==== ./content/user-doc/website.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./content/user-doc/helloworld.md
+1,17c1,2
+< Title:
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> Title: Hello World
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./content/user-doc/maven-artifacts.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./content/user-doc/getting-started.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+35d19
+< ####
+43a28
+> 
+45d29
+< </div>
+46a31
+> </div>
+51d35
+< ####
+76a61
+> 
+79,82d63
+< 
+< 
+< 
+< ####
+97a79
+> 
+99a82
+> 
+106a90
+> 
+109,112d92
+< 
+< 
+< 
+< ####
+125a106
+> 
+127a109
+> 
+179a162
+> 
+182,184d164
+< 
+< 
+< ####
+195a176
+> 
+197a179
+> 
+231a214
+> 
+234,236d216
+< 
+< 
+< ####
+245a226
+> 
+247a229
+> 
+254a237
+> 
+==== ./content/user-doc/found-a-bug.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./content/user-doc/cookbook.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./content/discussion-jarpackaging.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./content/README.md
+==== ./content/index.md
+1,16c1,2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> title: Home Page
+> license: https://www.apache.org/licenses/LICENSE-2.0
+24d9
+< 
+31d15
+< 
+49,50d32
+< 
+< 
+61d42
+< 
+==== ./content/generics-javaspaces.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./content/discussion-futuredirection.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./content/discussion-internet.md
+2,17c2
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> license: https://www.apache.org/licenses/LICENSE-2.0
+==== ./README.md
